@@ -1,0 +1,34 @@
+/**
+ * Import variables
+ */
+
+@import 'variables';
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import 'layouts/home';
+@import 'layouts/characters';
+@import 'layouts/article';
+@import 'layouts/tickets';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+/**
+ * Do NOT include anything else in this file!
+ */

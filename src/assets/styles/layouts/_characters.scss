@@ -1,0 +1,66 @@
+.freepikAuth {
+  display: none;
+}
+
+.container {
+  padding-bottom: 4em;
+}
+
+.characters {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.character {
+  text-align: center;
+  max-width: 50vw;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .characters {
+    justify-content: space-between;
+  }
+
+  .character {
+    max-width: 30vw;
+  }
+
+  .character-vector {
+    max-width: 30vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .characters {
+    justify-content: space-between;
+  }
+
+  .character {
+    max-width: 25vw;
+  }
+
+  .character-vector {
+    max-width: 25vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .characters {
+    justify-content: space-between;
+  }
+
+  .character {
+    max-width: 25vw;
+  }
+
+  .character-vector {
+    max-width: 25vw;
+    height: 62vh;
+  }
+}

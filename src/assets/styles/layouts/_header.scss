@@ -1,0 +1,59 @@
+// HEADER
+
+.logo-top {
+  width: 10em;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+.nav-link.active.disabled {
+  font-weight: bold;
+  color: $red;
+}
+
+@media (min-width: 768px) {
+  .logo-top {
+    width: 10em;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    margin: 1em;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .logo-top {
+    width: 10em;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    margin: 1em;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .logo-top {
+    width: 10em;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: start;
+    margin: 1em;
+  }
+}

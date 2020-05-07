@@ -1,0 +1,17 @@
+
+// Customization on Bootstrap colors
+$red: #DC3923;
+$link-color: $red;
+
+// NEW COLORS
+$ink: #28326C;
+$background-red: transparentize($red, 0.5);
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+$intro-text: 'Playfair Display', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+$quote-text: 'Special Elite', cursive;
+
+$fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';

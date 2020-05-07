@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+    <link rel="icon" class="theatre-icon" href="./assets/images/theater-masks-solid.svg">
+    <title>La escalera</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo-top">
+                <a href="home.html"><img class="logo-top" src="assets/images/logo.png"></a>
+            </div>
+            <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters.html">Reparto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Artículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active disabled" href="tickets.html">Entradas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="into-compra">
+            <h5>Comprar entradas</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Obra: La ópera de los tres centavos</li>
+                <li class="list-group-item">Fecha/Horario: 26 de junio / 21 horas</li>
+                <li class="list-group-item">Lugar: Sala Cero. Calle Sol, 5</li>
+                <li class="list-group-item"><strong>Precio compra entrada online: 6€</strong></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="form-block">
+            <form>
+                <div class="form-group row">
+                    <label for="inputFirstName" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="firstName" class="form-control" id="inputFirstName" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputLastName" class="col-sm-2 col-form-label">Apellidos</label>
+                    <div class="col-sm-10">
+                        <input type="lastName" class="form-control" id="inputLastName" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-6">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                            <option selected>Nº entradas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3">4</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="paymentData">
+                    <h5>Datos de pago</h5>
+                </div>
+                <div class="form-group row">
+                    <label for="cardNumber">Nº tarjeta</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="cardNumber" placeholder="" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text text-muted">
+                                <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>  
+                                <i class="fab fa-cc-mastercard"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="input-group">
+                        <input type="text" class="form-control digits" name="expirationMonth" placeholder="MM" required>
+                        <span class="separator"> / </span>
+                        <input type="text" class="form-control digits" name="expirationYear" placeholder="AA" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="input-group">
+                        <input type="text" class="form-control digits" id="CVVcode" placeholder="CVV" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="input-group btn">
+                        <button type="submit" class="btn btn-outline-dark">Comprar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="bottom">
+            <div class="bottom-logo">&copy <img class="logo-footer" src="assets/images/logo.png"></div>
+            <div class="bottom-link"><a href="home.html">Portada</a></div>
+            <div class="bottom-link"><a href="characters.html">Reparto</a></div>
+            <div class="bottom-link"><a href="article.html">Artículo</a></div>
+            <div class="bottom-link"><a href="tickets.html">Entradas</a></div>
+            <div class="bottom-icon"><a href=""><i class="fab fa-facebook-square"></i></a> <a href=""><i
+                        class="fab fa-instagram"></i></a></div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
